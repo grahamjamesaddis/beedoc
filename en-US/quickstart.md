@@ -17,18 +17,21 @@ For convenience, you should add `$GOPATH/bin` to your `$PATH` environment variab
 
 If you haven't set `$GOPATH` add it to the shell you're using (~/.profile, ~/.zshrc, ~/.cshrc or any other).
 
-For example `~/.zsh`
+For example `~/.zsh`:
+
 ```
 echo 'export GOPATH="$HOME/go"' >> ~/.zsh
 ```
 
-If you have already set `$GOPATH`
+If you have already set `$GOPATH`:
+
 ```
 echo 'export PATH="$GOPATH/bin:$PATH"' >> ~/.profile # or ~/.zshrc, ~/.cshrc, whatever shell you use
 exec $SHELL
 ```
 
 Want to quickly see how it works? Then just set things up like this:
+
 ```
 cd $GOPATH/src
 bee new hello
@@ -36,7 +39,8 @@ cd hello
 bee run
 ```
 
-Windows users：
+Windows users:
+
 ```
 cd %GOPATH%/src
 bee new hello
@@ -56,6 +60,7 @@ Once it's running, open a browser to [http://localhost:8080/](http://localhost:8
 ## Simple example
 
 The following example prints `Hello world` to your browser, it shows how easy it is to build a web application with beego.
+
 ```go
 package main
 
